@@ -11,7 +11,7 @@ function App() {
         This is main Page
         <FirstComponent />
         <RegistrationPage />
-        <LoginPage />
+        {/* <LoginPage /> */}
     </div>
   );
 }
