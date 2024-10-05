@@ -1,0 +1,6 @@
+.contact{
+    background: aquamarine;
+    display: grid;
+    place-content: center;
+    height: 85vh;
+}

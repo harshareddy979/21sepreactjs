@@ -1,0 +1,9 @@
+.content{
+    background: grey;
+    height: 13vh;
+}
+.wholeContent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
