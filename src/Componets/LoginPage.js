@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 import "./LoginPage.css"
 import HomePage from "./HomePage";
 import NavBar from "./NavBar";
 import { useNavigate } from "react-router-dom";
+import { defaultState, ValuesReducer } from "./Reducer";
 
 function LoginPage(props){
     const [Username,setUserName]=useState("")
     const [password,setPassword]=useState("")
     const [flag,setFlag]=useState(false)
     const navigate=useNavigate()
+    const [reducerValues,dispatch]=useReducer(ValuesReducer,defaultState)
 
     function loginValues(){
-        if(Username !== ""){
-            if(password !== ""){
+        if(Username === reducerValues.userName){
+            if(password === reducerValues.password){
               alert("login success")
               navigate("/homepage")
               setFlag(true)
