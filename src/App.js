@@ -10,9 +10,9 @@ import { useEffect } from 'react';
 function App() {
   var a="jdfbjfdb"
   const navigate=useNavigate();
-  useEffect(()=>{
-    alert("hello welcome to my page")
-  },[])
+  // useEffect(()=>{
+  //   alert("hello welcome to my page")
+  // },[])
   return (
     <div>
         <NavBar />
